@@ -2,7 +2,11 @@
 //  AppDelegate.swift
 //  MyWeather
 //
+<<<<<<< HEAD
 //  Created by Developer on 02.12.2022.
+=======
+//  Created by Ibragim Assaibuldayev on 28.11.2022.
+>>>>>>> e4dbcfdfbca580364651439113dc92236ba0ff02
 //
 
 import UIKit
