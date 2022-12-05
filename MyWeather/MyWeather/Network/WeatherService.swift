@@ -2,12 +2,6 @@
 //  WeatherService.swift
 //  MyWeather
 //
-<<<<<<< HEAD
-//  Created by Developer on 02.12.2022.
-//
-
-import Foundation
-=======
 //  Created by Ibragim Assaibuldayev on 01.12.2022.
 //
 
@@ -59,4 +53,3 @@ extension WeatherService: TargetType {
         return ["X-Yandex-API-Key": "fc7536be-00a0-485d-b849-cfdef578b1e3"]
     }
 }
->>>>>>> e4dbcfdfbca580364651439113dc92236ba0ff02
