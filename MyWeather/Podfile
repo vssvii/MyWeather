@@ -9,6 +9,8 @@ target 'MyWeather' do
 
  pod 'Moya', '~> 13.0'
  pod 'Alamofire', '~> 4.8.2'
+ pod 'PromiseKit'
+ pod 'Bond'
 
 
 end

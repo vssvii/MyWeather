@@ -1,27 +1,51 @@
 PODS:
   - Alamofire (4.8.2)
+  - Bond (7.8.1):
+    - Differ (~> 1.4)
+    - ReactiveKit (~> 3.14)
+  - Differ (1.4.5)
   - Moya (13.0.1):
     - Moya/Core (= 13.0.1)
   - Moya/Core (13.0.1):
     - Alamofire (~> 4.1)
     - Result (~> 4.1)
+  - PromiseKit (6.18.1):
+    - PromiseKit/CorePromise (= 6.18.1)
+    - PromiseKit/Foundation (= 6.18.1)
+    - PromiseKit/UIKit (= 6.18.1)
+  - PromiseKit/CorePromise (6.18.1)
+  - PromiseKit/Foundation (6.18.1):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.18.1):
+    - PromiseKit/CorePromise
+  - ReactiveKit (3.19.1)
   - Result (4.1.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.8.2)
+  - Bond
   - Moya (~> 13.0)
+  - PromiseKit
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Bond
+    - Differ
     - Moya
+    - PromiseKit
+    - ReactiveKit
     - Result
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  Bond: 87075c7f20f37ea3e73dc7057fce839787bf46eb
+  Differ: 3b6bd78e2b20cc795d9a86f7641d087524e4273e
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  PromiseKit: 49d70c53d5d20e346beaea4b276b5dd2ab446bb4
+  ReactiveKit: a36ebeb959fe6852dd674cc423163bfffb7e0541
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
 
-PODFILE CHECKSUM: f50139f2e02d2fe627894433f6c6fe3b815030f3
+PODFILE CHECKSUM: c3e192b631188c51141f6041c9b5b204a74a4621
 
 COCOAPODS: 1.11.3
