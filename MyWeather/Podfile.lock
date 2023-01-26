@@ -20,12 +20,14 @@ PODS:
     - PromiseKit/CorePromise
   - ReactiveKit (3.19.1)
   - Result (4.1.0)
+  - SnapKit (5.6.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.8.2)
   - Bond
   - Moya (~> 13.0)
   - PromiseKit
+  - SnapKit
 
 SPEC REPOS:
   trunk:
@@ -36,6 +38,7 @@ SPEC REPOS:
     - PromiseKit
     - ReactiveKit
     - Result
+    - SnapKit
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
@@ -45,7 +48,8 @@ SPEC CHECKSUMS:
   PromiseKit: 49d70c53d5d20e346beaea4b276b5dd2ab446bb4
   ReactiveKit: a36ebeb959fe6852dd674cc423163bfffb7e0541
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
 
-PODFILE CHECKSUM: c3e192b631188c51141f6041c9b5b204a74a4621
+PODFILE CHECKSUM: 745e355b66efb7b6c4b230999302ba1fe17279e0
 
 COCOAPODS: 1.11.3

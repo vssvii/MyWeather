@@ -11,18 +11,19 @@ import Alamofire
 
 
 enum WeatherService {
-    case fetchWeather
+    
+    
+    case fetchWeather(lat: Double, lon: Double, extra: Bool)
+    
 }
 
 
 extension WeatherService: TargetType {
     
-        
-    
     var baseURL: URL {
         switch self {
         case .fetchWeather:
-            return URL(string: "api.weather.yandex.ru")!
+            return URL(string: "https://api.weather.yandex.ru")!
         }
     }
     
@@ -46,10 +47,18 @@ extension WeatherService: TargetType {
     }
     
     var task: Task {
-        return .requestPlain
+        switch self {
+        case .fetchWeather(let lat, let lon, let extra):
+            let params: [String: Any] = [
+                "lat": lat,
+                "lon": lon,
+                "extra": extra
+            ]
+            return .requestParameters(parameters: params, encoding: URLEncoding.default)
+        }
     }
 //
     var headers: [String : String]? {
-        return ["X-Yandex-API-Key": "fc7536be-00a0-485d-b849-cfdef578b1e3"]
+        return ["X-Yandex-API-Key": "2cba68e2-7ff9-4f5c-97cc-71edb132053b"]
     }
 }

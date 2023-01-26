@@ -11,6 +11,11 @@ target 'MyWeather' do
  pod 'Alamofire', '~> 4.8.2'
  pod 'PromiseKit'
  pod 'Bond'
+ pod 'SnapKit'
+ pod 'FirebaseCore'
+ pod 'FirebaseFirestore'
+ pod 'FirebaseCrashlytics'
+ 
 
 
 end

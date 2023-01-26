@@ -15,11 +15,12 @@ class WeatherViewModel: NSObject {
     var weatherData = Observable<Weather?>(nil)
     
     func getWeatherData() {
-        provider.fetchWeatherData().done { [weak self]  weatherData in
-            guard let self = self else { return }
-            self.weatherData.value = weatherData
-        }.catch { error in
-            print(error.localizedDescription)
+        provider.fetchWeatherData { result, error in
+            if let err = error {
+                print(err)
+                return
+            }
+            self.weatherData.value = result
         }
     }
 }
